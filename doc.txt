@@ -1,0 +1,41 @@
+POKEMON:
+    - dùng ts cho app React;
+    - làm pages home và details
+    - basic: 
+        - type aliases vs interface
+        - type of function:
+        const printSomething = (): string =>{    // khai báo type của function ()=>string 
+            let name:string = 'hello'
+            return name
+        }
+        - extend type:
+            - type Name = {
+                name: string; };
+
+            type StudentDetails = Name & {  // tao 1 type aliases kết thừa type Name
+                age: number;
+                address: string; }
+            ==> StudentDetails sẽ có 3 thuộc tính name, address, age
+        - extend interface:
+            - interface Name {
+                name: string;}
+            interface NameDetails extends Name {
+                age: number;
+                address: string; }
+            ==> NameDetails sẽ có 3 thuộc tính name, address, age
+        - dấu ? và optional chaining
+        - function component: 
+            const App:React.FC = () => {}
+    
+    - Thực hiện:
+        - component: khi tạo mới 1 component thì sử dụng key "rafce" để tạo 1 component mới trong tsx
+        - Prop: khi truyền 1 prop thì phải khai báo type của prop đó ở component:
+                const PokemonColection:React.FC<PropsInterface> = ({pokemons}) => {}
+        hoặc    const PokemonColection = ({pokemons}:PropsInterface) => {}
+        - dùng chung interface cho nhiều file:
+            - tạo 1 file chức các interface chung cho nhiều file;
+        - feature: 
+            - render: cần tạo ra 1 [] chứa các pokemons dựa vào name do url chỉ trả về {name, url};
+            - Node: với bất đồng bộ thì khi state nên dùng callBack
+            - loadMore: dựa và properties "next" của url render => để push vào state data trước đó;
+            - details
