@@ -70,7 +70,6 @@ const App:React.FC = () => {
             {
               loadings? "Loading..." :"Load More"
             }
-            
           </button>
         </div>
       </div>

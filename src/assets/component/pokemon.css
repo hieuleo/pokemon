@@ -53,6 +53,15 @@
     margin: 1rem;
     text-align: start;
 }
+
+.detail-ability{
+    font-weight: 900;
+}
+
+.detail-skill > div{
+    width: 100%;
+    text-align: center;
+}
 .detail-close{ 
     cursor: pointer;
     margin: 1rem 1rem 0 auto;
@@ -76,12 +85,32 @@
 .pokemon-list-detailed {
     background-color: #f4f1de;
     position: absolute;
-    text-align:center;
-    width: 270px;
-    height: 300px;
+    /* text-align:center; */
+    width: 370px;
+    height: 400px;
     top:30%;
     left:41%;
     border-radius: 12px;
+}
+
+.pokemon-list-icon-i{
+    font-size: 26px !important;
+}
+
+.pokemon-list-icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    padding: 8px 12px;
+    display: inline-block;
+    background-color: transition;
+    color:#3d405b;
+    border-radius: 12px;
+}
+
+.pokemon-list-icon:hover .pokemon-list-icon-i{
+    color:#3d405b;
 }
 
 .btn {
@@ -90,7 +119,6 @@
     display:flex;
     justify-content: space-around;
 }
-
 
 button {
     cursor: pointer;
@@ -109,4 +137,9 @@ button:hover {
     padding:0.5rem;
     border-radius: 12px;
     font-size: 1.5rem;
-    border:none;}
+    border:none;
+}
+
+.detail-info{
+    height: 180px;
+}
