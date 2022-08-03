@@ -88,8 +88,9 @@
     /* text-align:center; */
     width: 370px;
     height: 400px;
-    top:20%;
-    left:39%;
+    top:24%;
+    left:50%;
+    transform: translateX(-50%);
     border-radius: 12px;
     z-index: 1000000000;
     border-radius: 15px;
